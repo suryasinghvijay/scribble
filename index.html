@@ -16,8 +16,8 @@
 <body class="body">
 
 <div>
-    <input class="header_buttons" id="sign_in" type="button" value="Sign In" onclick="signInModal()">
-    <input class="header_buttons" id="sign_up" type="button" value="Sign Up">
+    <input class="header_buttons" id="sign_in" type="button" value="Sign In" onclick="signInButtonClicked()">
+    <input class="header_buttons" id="sign_up" type="button" value="Sign Up" onclick="signUpButtonClicked()">
     <a class="logo-title">ScriBBler</a>
     <p class="middleText">Explore, Imagine, Create</p>
 </div>
@@ -30,34 +30,27 @@
 
 
 <!-- The Modal -->
-<div id="myModal" class="modal">
+<div class="signUpModal">
 
-    <div class="modal_container">
+    <div class="signUpModalContainer">
 
-        <div class="modal-header">
+        <div class="signUpModalHeader">
             <span class="close">&times;</span>
             <p id="modal_header_p">Get Started</p>
             <hr>
         </div>
 
-
         <!-- Modal content -->
-        <div class="modal-content">
-
+        <div class="signUpModalContent">
             <label class="label">name</label>
             <input class="input" type="text" placeholder="Enter your name" name="name" required>
-
             <label class="label">Username</label>
             <input class="input" type="text" placeholder="Enter your username" name="username" required>
-
             <label class="label">Password</label>
             <input class="input" type="text" placeholder="Enter your password" name="password" required>
-
             <label class="label">Confirm Password</label>
             <input class="input" type="text" placeholder="Re-enter your password" name="confirmedPassword" required>
-
             <input class="submit-button" type="button" value="Sign up">
-
         </div>
 
     </div>

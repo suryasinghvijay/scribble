@@ -50,7 +50,7 @@
 }
 
 
-.modal{
+.signUpModal{
     width: 100%;
     display: none;
     position: fixed;
@@ -98,20 +98,20 @@
     cursor: pointer;
 }
 
-.modal-header{
+.signUpModalHeader{
     font-size: 20px;
     margin-bottom: 0px;
     background: white;
 }
 
 
-.modal-content {
+.signUpModalContent {
     display: flex;
     flex-direction: column;
     background-color: white;
 }
 
-.modal_container {
+.signUpModalContainer {
     align-self: center;
     width: 350px;
     background: white;

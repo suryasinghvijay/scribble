@@ -1,6 +1,6 @@
-function signInModal() {
-    let modal = document.getElementById("myModal");
-    let btn = document.getElementById("sign_in");
+function signUpButtonClicked() {
+    let modal = document.getElementsByClassName("signUpModal")[0];
+    let btn = document.getElementById("sign_up");
     let span = document.getElementsByClassName("close")[0];
 
 // sign-in button
@@ -13,8 +13,12 @@ function signInModal() {
     }
 // When the user clicks anywhere outside of the modal, close it
     window.onclick = function (event) {
-        if (event.target == modal) {
+        if (event.target === modal) {
             modal.style.display = "none";
         }
     }
+}
+
+function signInButtonClicked(){
+
 }
