@@ -5,14 +5,14 @@
     left: 45%;
 }
 
-.body{
+.body {
     background-image: url('../images/background.jpg');
     Background-size: 100% auto;
     Background-repeat: repeat-y;
 
 }
 
-.body_button{
+.body_button {
     background-color: gold;
     color: black;
     width: 90px;
@@ -39,7 +39,7 @@
     font-family: 'Ubuntu Mono', monospace;
 }
 
-.header-buttons {
+.header_buttons {
     background-color: blue;
     color: white;
     width: 90px;
@@ -47,4 +47,80 @@
     float: right;
     margin: 10px 10px 0px 0px;
     font-family: 'Lato', sans-serif;
+}
+
+
+.modal{
+    width: 100%;
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 10%;
+    height: 100%;
+    overflow: auto; /* Enable scroll if needed */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+
+.label {
+    padding-bottom: 10px;
+}
+
+.input {
+    background-color: whitesmoke;
+    padding: 8px;
+    border: none;
+    margin-bottom: 20px;
+}
+
+.submit-button {
+    padding: 8px;
+    background-color: green;
+    color: white;
+    font-size: large;
+    border: none;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 20px;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal-header{
+    font-size: 20px;
+    margin-bottom: 0px;
+    background: white;
+}
+
+
+.modal-content {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+}
+
+.modal_container {
+    align-self: center;
+    width: 350px;
+    background: white;
+    margin: auto;
+    padding: 20px;
+}
+
+
+#modal_header_p{
+    margin: 0px;
+    font-size: 20px;
 }
