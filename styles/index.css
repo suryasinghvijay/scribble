@@ -1,0 +1,50 @@
+
+.container {
+    position: absolute;
+    top: 45%;
+    left: 45%;
+}
+
+.body{
+    background-image: url('../images/background.jpg');
+    Background-size: 100% auto;
+    Background-repeat: repeat-y;
+
+}
+
+.body_button{
+    background-color: gold;
+    color: black;
+    width: 90px;
+    padding: 10px;
+    border-color: white;
+    float: right;
+    margin: 10px 10px 0px 0px;
+    font-family: 'Lato', sans-serif;
+}
+
+.header {
+    background-color: ghostwhite;
+    margin-top: 0px;
+}
+
+.logo-title {
+    color: blue;
+    font-family: 'Montez', cursive;
+    font-size: 40px;
+}
+
+.middleText {
+    margin-top: 0px;
+    font-family: 'Ubuntu Mono', monospace;
+}
+
+.header-buttons {
+    background-color: blue;
+    color: white;
+    width: 90px;
+    padding: 10px;
+    float: right;
+    margin: 10px 10px 0px 0px;
+    font-family: 'Lato', sans-serif;
+}
