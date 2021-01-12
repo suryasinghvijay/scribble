@@ -5,7 +5,7 @@
     <link href="https://fonts.googleapis.com/css?family=Montez&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">
-    <link href='styles/index.css' rel='stylesheet' type='text/css'>
+    <link href='styles/common.css' rel='stylesheet' type='text/css'>
     <!--
         <link href='font.css' rel='stylesheet' type='text/css'>
     -->
@@ -16,8 +16,8 @@
 <body class="body">
 
 <div>
-    <input class="header_buttons" id="sign_in" type="button" value="Sign In" onclick="signInButtonClicked()">
-    <input class="header_buttons" id="sign_up" type="button" value="Sign Up" onclick="signUpButtonClicked()">
+    <input class="header_buttons" id="sign_in" type="button" value="signIn" >
+    <input class="header_buttons" id="sign_up" type="button" value="signUp" >
     <a class="logo-title">ScriBBler</a>
     <p class="middleText">Explore, Imagine, Create</p>
 </div>
@@ -30,13 +30,13 @@
 
 
 <!-- The Modal -->
-<div class="signUpModal">
+<div class="modal">
 
     <div class="signUpModalContainer">
 
         <div class="signUpModalHeader">
             <span class="close">&times;</span>
-            <p id="modal_header_p">Get Started</p>
+            <p class="modal_header_p">Get Started</p>
             <hr>
         </div>
 
@@ -47,9 +47,9 @@
             <label class="label">Username</label>
             <input class="input" type="text" placeholder="Enter your username" name="username" required>
             <label class="label">Password</label>
-            <input class="input" type="text" placeholder="Enter your password" name="password" required>
+            <input class="input" type="password" placeholder="Enter your password" name="password" required>
             <label class="label">Confirm Password</label>
-            <input class="input" type="text" placeholder="Re-enter your password" name="confirmedPassword" required>
+            <input class="input" type="password" placeholder="Re-enter your password" name="confirmedPassword" required>
             <input class="submit-button" type="button" value="Sign up">
         </div>
 
@@ -58,7 +58,33 @@
 </div>
 
 
-<script src="scripts/index.js"></script>
+<div class="modal">
+
+    <div class="signUpModalContainer">
+
+        <div class="signUpModalHeader">
+            <span class="close">&times;</span>
+            <p class="modal_header_p">Welcome Back!</p>
+            <hr>
+        </div>
+
+        <!-- Modal content -->
+        <div class="signUpModalContent">
+            <label class="label">Username</label>
+            <input class="input" type="text" placeholder="Enter your username" name="username" required>
+            <label class="label">Password</label>
+            <input class="input" type="password" placeholder="Enter your password" name="password" required>
+            <input class="submit-button" type="button" value="Sign In">
+            <label id="register">Not a member? <a id="register_sign_up_text"> Sign Up</a></label>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+<script src="scripts/common.js"></script>
 </body>
 
 </html>
