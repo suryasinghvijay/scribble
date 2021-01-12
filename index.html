@@ -16,15 +16,15 @@
 <body class="body">
 
 <div>
-    <input class="header_buttons" id="sign_in" type="button" value="signIn" >
-    <input class="header_buttons" id="sign_up" type="button" value="signUp" >
+    <input class="header_buttons" id="sign_in" type="button" value="signIn" onclick="showModal(this.id)">
+    <input class="header_buttons" id="sign_up" type="button" value="signUp" onclick="showModal(this.id)">
     <a class="logo-title">ScriBBler</a>
     <p class="middleText">Explore, Imagine, Create</p>
 </div>
 
 <div class="container">
     <input class="body_button" type="button" value="All Posts">
-    <input class="body_button" type="button" value="Create Post">
+    <input class="body_button" type="button" value="createPost" id="create_post" onclick="showModal(this.id)">
 
 </div>
 
@@ -76,6 +76,29 @@
             <input class="input" type="password" placeholder="Enter your password" name="password" required>
             <input class="submit-button" type="button" value="Sign In">
             <label id="register">Not a member? <a id="register_sign_up_text"> Sign Up</a></label>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+<div class="postCreateModal">
+    <div class="createPostContainer">
+        <div class="signUpModalHeader">
+            <span class="close">&times;</span>
+            <p class="modal_header_p">Pen Your Post</p>
+            <hr>
+        </div>
+
+        <!-- Modal content -->
+        <div class="signUpModalContent">
+            <label class="label">Title</label>
+            <input class="input" type="text" placeholder="Enter Title of your post" name="title" required>
+            <label class="label">Contents</label>
+            <textarea id="comments" rows="20" cols="40"> Enter the contents of your post </textarea>
+            <input class="postCreateButton" type="button" value="create">
 
         </div>
 

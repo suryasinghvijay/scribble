@@ -47,6 +47,7 @@
     float: right;
     margin: 10px 10px 0 0;
     font-family: 'Lato', sans-serif;
+    border: none;
 }
 
 .label {
@@ -101,7 +102,9 @@
     background: white;
     margin: auto;
     padding: 20px;
+    align-items: center;
 }
+
 
 .signUpModalHeader {
     font-size: 20px;
@@ -126,7 +129,7 @@
 }
 
 #register {
-    text-align:center;
+    text-align: center;
 }
 
 #register_sign_up_text:hover,
@@ -135,3 +138,42 @@
     text-decoration: none;
     cursor: pointer;
 }
+
+.postCreateButton {
+    background-color: green;
+    color: white;
+    font-size: large;
+    border: none;
+    margin: auto;
+    display: block;
+    width: 150px;
+    padding: 8px;
+}
+
+#comments {
+    width: 100%;
+    height: 100%;
+    margin-bottom: 20px;
+}
+
+
+.postCreateModal {
+    width: 100%;
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 5%;
+    height: 100%;
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0); /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+}
+
+.createPostContainer{
+    width: 85%;
+    background: white;
+    margin: auto;
+    padding: 20px;
+    align-items: center;
+}
+
