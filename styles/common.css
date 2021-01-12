@@ -1,0 +1,179 @@
+
+.container {
+    position: absolute;
+    top: 45%;
+    left: 45%;
+}
+
+.body {
+    background-image: url('../images/background.jpg');
+    Background-size: 100% auto;
+    Background-repeat: repeat-y;
+
+}
+
+.body_button {
+    background-color: gold;
+    color: black;
+    width: 90px;
+    padding: 10px;
+    border-color: white;
+    float: right;
+    margin: 10px 10px 0 0;
+    font-family: 'Lato', sans-serif;
+}
+
+.header {
+    background-color: ghostwhite;
+    margin-top: 0;
+}
+
+.logo-title {
+    color: blue;
+    font-family: 'Montez', cursive;
+    font-size: 40px;
+}
+
+.middleText {
+    margin-top: 0;
+    font-family: 'Ubuntu Mono', monospace;
+}
+
+.header_buttons {
+    background-color: blue;
+    color: white;
+    width: 90px;
+    padding: 10px;
+    float: right;
+    margin: 10px 10px 0 0;
+    font-family: 'Lato', sans-serif;
+    border: none;
+}
+
+.label {
+    padding-bottom: 10px;
+}
+
+.input {
+    background-color: whitesmoke;
+    padding: 8px;
+    border: none;
+    margin-bottom: 20px;
+}
+
+.submit-button {
+    padding: 8px;
+    background-color: green;
+    color: white;
+    font-size: large;
+    border: none;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 20px;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+.modal {
+    width: 100%;
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 10%;
+    height: 100%;
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0); /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+}
+
+.signUpModalContainer {
+    width: 350px;
+    background: white;
+    margin: auto;
+    padding: 20px;
+    align-items: center;
+}
+
+
+.signUpModalHeader {
+    font-size: 20px;
+    margin-bottom: 0;
+    background: white;
+}
+
+
+.signUpModalContent {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+}
+
+.modal_header_p {
+    margin: 0;
+    font-size: 20px;
+}
+
+#register_sign_up_text {
+    color: blue;
+}
+
+#register {
+    text-align: center;
+}
+
+#register_sign_up_text:hover,
+#register_sign_up_text:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.postCreateButton {
+    background-color: green;
+    color: white;
+    font-size: large;
+    border: none;
+    margin: auto;
+    display: block;
+    width: 150px;
+    padding: 8px;
+}
+
+#comments {
+    width: 100%;
+    height: 100%;
+    margin-bottom: 20px;
+}
+
+
+.postCreateModal {
+    width: 100%;
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 5%;
+    height: 100%;
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0); /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+}
+
+.createPostContainer{
+    width: 85%;
+    background: white;
+    margin: auto;
+    padding: 20px;
+    align-items: center;
+}
+

@@ -2,12 +2,112 @@
 <html>
 
 <head>
-    <!-- TODO: Include Font Awesome file here -->
-    <!-- TODO: Include Google Fonts file here -->
+    <link href="https://fonts.googleapis.com/css?family=Montez&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">
+    <link href='styles/common.css' rel='stylesheet' type='text/css'>
+    <!--
+        <link href='font.css' rel='stylesheet' type='text/css'>
+    -->
+
 </head>
 
-<body>
-    <!-- TODO: Include all your code for the header and home page here -->
+
+<body class="body">
+
+<div>
+    <input class="header_buttons" id="sign_in" type="button" value="signIn" onclick="showModal(this.id)">
+    <input class="header_buttons" id="sign_up" type="button" value="signUp" onclick="showModal(this.id)">
+    <a class="logo-title">ScriBBler</a>
+    <p class="middleText">Explore, Imagine, Create</p>
+</div>
+
+<div class="container">
+    <input class="body_button" type="button" value="All Posts">
+    <input class="body_button" type="button" value="createPost" id="create_post" onclick="showModal(this.id)">
+
+</div>
+
+
+<!-- The Modal -->
+<div class="modal">
+
+    <div class="signUpModalContainer">
+
+        <div class="signUpModalHeader">
+            <span class="close">&times;</span>
+            <p class="modal_header_p">Get Started</p>
+            <hr>
+        </div>
+
+        <!-- Modal content -->
+        <div class="signUpModalContent">
+            <label class="label">name</label>
+            <input class="input" type="text" placeholder="Enter your name" name="name" required>
+            <label class="label">Username</label>
+            <input class="input" type="text" placeholder="Enter your username" name="username" required>
+            <label class="label">Password</label>
+            <input class="input" type="password" placeholder="Enter your password" name="password" required>
+            <label class="label">Confirm Password</label>
+            <input class="input" type="password" placeholder="Re-enter your password" name="confirmedPassword" required>
+            <input class="submit-button" type="button" value="Sign up">
+        </div>
+
+    </div>
+
+</div>
+
+
+<div class="modal">
+
+    <div class="signUpModalContainer">
+
+        <div class="signUpModalHeader">
+            <span class="close">&times;</span>
+            <p class="modal_header_p">Welcome Back!</p>
+            <hr>
+        </div>
+
+        <!-- Modal content -->
+        <div class="signUpModalContent">
+            <label class="label">Username</label>
+            <input class="input" type="text" placeholder="Enter your username" name="username" required>
+            <label class="label">Password</label>
+            <input class="input" type="password" placeholder="Enter your password" name="password" required>
+            <input class="submit-button" type="button" value="Sign In">
+            <label id="register">Not a member? <a id="register_sign_up_text"> Sign Up</a></label>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+<div class="postCreateModal">
+    <div class="createPostContainer">
+        <div class="signUpModalHeader">
+            <span class="close">&times;</span>
+            <p class="modal_header_p">Pen Your Post</p>
+            <hr>
+        </div>
+
+        <!-- Modal content -->
+        <div class="signUpModalContent">
+            <label class="label">Title</label>
+            <input class="input" type="text" placeholder="Enter Title of your post" name="title" required>
+            <label class="label">Contents</label>
+            <textarea id="comments" rows="20" cols="40"> Enter the contents of your post </textarea>
+            <input class="postCreateButton" type="button" value="create">
+
+        </div>
+
+    </div>
+
+</div>
+
+
+<script src="scripts/common.js"></script>
 </body>
 
 </html>
