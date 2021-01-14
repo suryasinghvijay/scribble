@@ -37,18 +37,22 @@
         </div>
 
         <!-- Modal content -->
-        <div class="signUpModalContent">
-            <label class="label">name</label>
-            <input class="input" type="text" placeholder="Enter your name" name="name" required>
-            <label class="label">Username</label>
-            <input class="input" type="text" placeholder="Enter your username" name="username" required>
-            <label class="label">Password</label>
-            <input class="input" type="password" placeholder="Enter your password" name="password" required>
-            <label class="label">Confirm Password</label>
-            <input class="input" type="password" placeholder="Re-enter your password" name="confirmedPassword" required>
-            <input class="submit-button" type="button" value="Sign up">
-        </div>
+        <form>
+            <div class="signUpModalContent">
 
+                <label class="label">name</label>
+                <input class="input" type="text" placeholder="Enter your name" name="name" required>
+                <label class="label">Username</label>
+                <input class="input" type="text" placeholder="Enter your username" name="username" required>
+                <label class="label">Password</label>
+                <input class="input" type="password" placeholder="Enter your password" name="password" required>
+                <label class="label">Confirm Password</label>
+                <input class="input" type="password" placeholder="Re-enter your password" name="confirmedPassword"
+                       required>
+                <input class="submit-button" type="submit" value="Sign up">
+
+            </div>
+        </form>
     </div>
 
 </div>
@@ -63,17 +67,18 @@
             <p class="modal_header_p">Welcome Back!</p>
             <hr>
         </div>
+        <form>
+            <!-- Modal content -->
+            <div class="signUpModalContent">
+                <label class="label">Username</label>
+                <input class="input" type="text" placeholder="Enter your username" name="username" required>
+                <label class="label">Password</label>
+                <input class="input" type="password" placeholder="Enter your password" name="password" required>
+                <input class="submit-button" type="submit" value="Sign In">
+                <label id="register">Not a member? <a id="register_sign_up_text"> Sign Up</a></label>
 
-        <!-- Modal content -->
-        <div class="signUpModalContent">
-            <label class="label">Username</label>
-            <input class="input" type="text" placeholder="Enter your username" name="username" required>
-            <label class="label">Password</label>
-            <input class="input" type="password" placeholder="Enter your password" name="password" required>
-            <input class="submit-button" type="button" value="Sign In">
-            <label id="register">Not a member? <a id="register_sign_up_text"> Sign Up</a></label>
-
-        </div>
+            </div>
+        </form>
 
     </div>
 
