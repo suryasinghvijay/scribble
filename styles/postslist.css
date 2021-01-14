@@ -1,0 +1,69 @@
+.postListStructure {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-content: center;
+
+
+}
+
+.postCard {
+    display: flex;
+    flex-direction: row;
+    width: 41%;
+    margin: 1%;
+    border-radius: 10px;
+    background-color: white;
+}
+
+.postCard:hover{
+    box-shadow: 0 0 50px rgba(33,33,33,.5);
+    elevation: above;
+}
+
+
+.postDetails {
+    width: 100%;
+    padding: 8px;
+    color: black;
+    background-color: lightgrey;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.postCreateName {
+    padding: 12px;
+    width: auto;
+    color: black;
+    background-color: white;
+    align-self: center;
+    text-align: center;
+}
+
+span.deleteIcon{
+    align-self: center;
+    padding-right: 20px;
+}
+
+.title{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: center;
+
+}
+
+span.ellipsis:hover,
+span.ellipsis:focus,
+span.deleteIcon:hover,
+span.deleteIcon:focus{
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+span.ellipsis{
+    float: right;
+    padding-right: 20px;
+}
