@@ -67,3 +67,7 @@ span.ellipsis{
     float: right;
     padding-right: 20px;
 }
+
+.postlist-body{
+    background-color: #ffeedd;
+}

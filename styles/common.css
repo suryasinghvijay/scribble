@@ -1,28 +1,4 @@
 
-.container {
-    position: absolute;
-    top: 45%;
-    left: 45%;
-}
-
-.body {
-    background-image: url('../images/background.jpg');
-    Background-size: 100% auto;
-    Background-repeat: repeat-y;
-
-}
-
-.body_button {
-    background-color: gold;
-    color: black;
-    width: 90px;
-    padding: 10px;
-    border-color: white;
-    float: right;
-    margin: 10px 10px 0 0;
-    font-family: 'Lato', sans-serif;
-}
-
 .header {
     background-color: ghostwhite;
     margin-top: 0;

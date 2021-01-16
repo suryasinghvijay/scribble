@@ -2,6 +2,7 @@
 <html>
 
 <head>
+    <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Montez&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">
@@ -10,17 +11,14 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
-<body bgcolor="#ffeedd">
+<body class="postlist-body">
 
-<div>
-    <input class="header_buttons" id="sign_in" type="button" value="Sign In" onclick="showModal(this.id)">
-    <input class="header_buttons" id="sign_up" type="button" value="Sign Up" onclick="showModal(this.id)">
-    <a class="logo-title">ScriBBler</a>
-    <p class="middleText">Explore, Imagine, Create</p>
-</div>
+<div id="header"></div>
+
 
 <!-- ATTENTION: The HTML code for the list of posts has been given to you. You can feel free to add/delete/modify this code. You need to write the proper CSS and JavaScript code corresponding to this page so that the result looks like the screenshots given to you in the Project Statement. -->
 
+    <div id="includedContent"></div>
 <!-- list of all posts starts here -->
 <div class="postListStructure">
 
@@ -34,13 +32,13 @@
             <div class="title">
                 <p>&#39;let me&#39; be a &#39;const&#39; (ant), not a &#39;var&#39; (iable)!</p>
                 <span class="deleteIcon">
-                        <i class="fa fa-trash" aria-hidden="true"></i>
+                        <i class="fa fa-trash" aria-hidden="false"></i>
                     </span>
             </div>
             <p>Since JavaScript does not have any type-checking, either of these keywords can be used to declare a
                 variable of any type (datatype) in JavaScript. Though all the three keywords are used for the same
                 purpose, they are different.</p>
-            <span class="ellipsis">
+            <span class="ellipsis" id="details1">
                    <i class="fa fa-ellipsis-h" aria-hidden="true"></i>
                 </span>
         </div>
@@ -62,7 +60,7 @@
             </div>
             <p>One of the biggest challenges in software development is time. It’s something we can’t easily get more
                 of, but linting can help us make the most out of the time we have.</p>
-            <span class="ellipsis">
+            <span class="ellipsis" id="details2">
                    <i class="fa fa-ellipsis-h" aria-hidden="true"></i>
                 </span>
         </div>
@@ -70,7 +68,7 @@
     <!-- post 2 ends here -->
 
     <!-- post 3 starts here -->
-    <div class="postCard">
+    <div class="postCard" id="post-card-3">
         <div class="postCreateName">
             <p class="name">Yazeed Bzadough</p>
         </div>
@@ -78,14 +76,14 @@
         <div class="postDetails">
             <div class="title">
                 <p>How to Get More Views on Your Tech Blog</p>
-                <span class="deleteIcon">
+                <span class="deleteIcon" onclick="onDeleteClicked(this.id)">
                         <i class="fa fa-trash" aria-hidden="true"></i>
                     </span>
             </div>
             <p>If you're a developer with a Twitter account, you've already seen everyone and their cat start a blog,
                 YouTube channel, or Patreon. We all want to become stars, or at the very least, a recognizable name in
                 the industry.</p>
-            <span class="ellipsis">
+            <span class="ellipsis" id="details3">
                    <i class="fa fa-ellipsis-h" aria-hidden="true"></i>
                 </span>
         </div>
@@ -109,7 +107,7 @@
                 words. This wastes mental energy, and you run the risk of getting the mapping wrong. Different people
                 will map to different words, which
                 leads to confusion when discussing the code.</p>
-            <span class="ellipsis">
+            <span class="ellipsis" id="details4">
                    <i class="fa fa-ellipsis-h" aria-hidden="true"></i>
                 </span>
         </div>
@@ -133,7 +131,7 @@
                 some code and this file is named xyz.js, then this file is treated as a module in Node, and you can say
                 that you’ve created a module
                 named xyz.</p>
-            <span class="ellipsis">
+            <span class="ellipsis" id="details5">
                    <i class="fa fa-ellipsis-h" aria-hidden="true"></i>
                 </span>
         </div>
@@ -144,7 +142,13 @@
 
 </div>
 <!-- list of all posts ends here -->
+<script>
+    $(function () {
+        $("#header").load("header.html");
+    });
+</script>
 <script src="../scripts/postslist.js"></script>
+<script src="../scripts/common.js"></script>
 
 </body>
 
