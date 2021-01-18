@@ -15,7 +15,7 @@ document.getElementById("saveButton").onclick = function(){
 var likeCount = 0;
 function likeCounter(){
 	likeCount +=1;
-	if(likeCount == 1){
+	if(likeCount === 1){
 		document.getElementById("likeCount").innerHTML = likeCount+" person likes this!"
 	} else if(likeCount > 1){
 		document.getElementById("likeCount").innerHTML = likeCount+" people like this!"
@@ -23,7 +23,6 @@ function likeCounter(){
 		document.getElementById("likeCount").innerHTML = "Be the first one to like this!"
 	}
 }
-var commentsArrayList=[];
 var array=[];
 function addComment(){
 	 var textarea = document.getElementById('addComment');
