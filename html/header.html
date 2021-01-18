@@ -5,24 +5,19 @@
     <link href="https://fonts.googleapis.com/css?family=Montez&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">
-    <link href='styles/common.css' rel='stylesheet' type='text/css'>
-    <link href='styles/index.css' rel='stylesheet' type='text/css'>
+    <link href='../styles/common.css' rel='stylesheet' type='text/css'>
+    <link href='../styles/index.css' rel='stylesheet' type='text/css'>
+
 </head>
 
 
-<body class="body">
+<body>
 
 <div>
     <input class="header_buttons" id="sign_in" type="button" value="Sign In" onclick="showModal(this.id)">
     <input class="header_buttons" id="sign_up" type="button" value="Sign Up" onclick="showModal(this.id)">
     <a class="logo-title">ScriBBler</a>
     <p class="middleText">Explore, Imagine, Create</p>
-</div>
-
-<div class="container">
-    <input class="body_button" type="button" value="Create Post" id="create_post" onclick="showModal(this.id)">
-    <input class="body_button" id="getAllPosts" type="button" value="All Posts">
-
 </div>
 
 
@@ -41,7 +36,7 @@
         <form>
             <div class="signUpModalContent">
 
-                <label class="label">Name</label>
+                <label class="label">name</label>
                 <input class="input" type="text" placeholder="Enter your name" name="name" required>
                 <label class="label">Username</label>
                 <input class="input" type="text" placeholder="Enter your username" name="username" required>
@@ -99,7 +94,7 @@
             <label class="label">Title</label>
             <input class="input" type="text" placeholder="Enter Title of your post" name="title" required>
             <label class="label">Contents</label>
-            <textarea id="comments" rows="20" cols="40" placeholder="Enter the contents of your post"></textarea>
+            <textarea id="comments" rows="20" cols="40"> Enter the contents of your post </textarea>
             <input class="postCreateButton" type="button" value="create">
 
         </div>
@@ -109,9 +104,7 @@
 </div>
 
 
-<script src="scripts/common.js"></script>
-<script src="scripts/index.js"></script>
-
+<script src="../scripts/common.js"></script>
 </body>
 
 </html>

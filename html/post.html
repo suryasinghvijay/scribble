@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Montez&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">
+    <link href='../styles/common.css' rel='stylesheet' type='text/css'>
+    <link href='../styles/post.css' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+<div id="header"></div>
+
+	<div id="title"> Everything you should knoe about module & require in Node.js</div>
+	
+	<div id="nameLayout">
+		<div id="name">Srishti Gupta</div>
+	<button id="editButton" class="pinkButton">Edit <i class='far fa-edit'></i></button>
+	<button id="saveButton"  class="pinkButton" hidden>Save <i class='far fa-save'></i></button>
+	</div>
+	
+	<p id="detials">Since JavaScript does not have any type-checking, either of these keywords can be used to declare a
+                variable of any type (datatype) in JavaScript. Though all the three keywords are used for the same
+                purpose, they are different.Since JavaScript does not have any type-checking, either of these keywords can be used to declare a
+                variable of any type (datatype) in JavaScript. Though all the three keywords are used for the same
+                purpose, they are different.Since JavaScript does not have any type-checking, either of these keywords can be used to declare a
+                variable of any type (datatype) in JavaScript. Though all the three keywords are used for the same
+                purpose, they are different.Since JavaScript does not have any type-checking, either of these keywords can be used to declare a
+                variable of any type (datatype) in JavaScript. Though all the three keywords are used for the same
+                purpose, they are different.Since JavaScript does not have any type-checking, either of these keywords can be used to declare a
+                variable of any type (datatype) in JavaScript. Though all the three keywords are used for the same
+                purpose, they are different.
+	</p>
+	
+	<div id="likeButtonLayout">
+		<button id="likeButton" onclick="likeCounter()"  class="pinkButton"><i class='fa fa-thumbs-up'></i> Like </button>
+	</div>
+	<p id="likeCount" > Be the first one to like this!</p>
+	
+	<div id="commentLayout">
+			<textarea id="addComment" rows="10" cols="10" placeholder="Enter the contents of your post"></textarea>
+			<button id="comment"  class="redButton" onclick="addComment()">Comment</button>
+			<div id="allCommentsTitle"> All Comments </div>
+			<div id="commentList"></div>
+		
+	</div>
+
+<script>
+    $(function () {
+        $("#header").load("header.html");
+    });
+</script>
+<script src="../scripts/post.js"></script>
+<script src="../scripts/common.js"></script>
+<script src='https://kit.fontawesome.com/a076d05399.js'></script>
+</body>
+
+</html>
+	

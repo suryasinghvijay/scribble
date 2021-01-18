@@ -6,7 +6,6 @@ let register = document.getElementById("register");
 let createPostModal = document.getElementsByClassName("postCreateModal")[0];
 let createPostSpan = document.getElementsByClassName("close")[2];
 
-
 function displayModal(model, span) {
     console.log("create post model"+ model)
 

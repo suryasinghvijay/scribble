@@ -4,8 +4,6 @@
     justify-content: space-around;
     flex-wrap: wrap;
     align-content: center;
-
-
 }
 
 .postCard {
@@ -51,6 +49,7 @@ span.deleteIcon{
     flex-direction: row;
     justify-content: space-between;
     align-content: center;
+    color: grey;
 
 }
 
@@ -66,4 +65,65 @@ span.deleteIcon:focus{
 span.ellipsis{
     float: right;
     padding-right: 20px;
+}
+
+.postlist-body{
+    background-color: #ffeedd;
+}
+
+.confirmButton{
+    background-color: green;
+    color: white;
+    width: 90px;
+    padding: 10px;
+    float: right;
+    margin: 10px 10px 0 0;
+    font-family: 'Lato', sans-serif;
+    border: none;
+    font-weight: bold;
+}
+
+.cancelButton{
+    background-color: red;
+    color: white;
+    width: 90px;
+    padding: 10px;
+    float: right;
+    margin: 10px 10px 0 0;
+    font-family: 'Lato', sans-serif;
+    border: none;
+    font-weight: bold;
+}
+
+
+
+.confirmPopUpModal {
+    width: 100%;
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 10%;
+    height: 100%;
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0); /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+}
+
+.confirmPopUpContainer {
+    width: 350px;
+    background: white;
+    margin: auto;
+    padding: 20px;
+    align-items: center;
+    font-family: 'Lato', sans-serif;
+}
+
+
+.confirmPopUpContent {
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 10px;
 }
